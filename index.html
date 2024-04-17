@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Set body height to viewport height */
+            flex-direction: column; /* Stack items vertically */
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px; /* Add some space between heading and form */
+        }
+        form {
+            background-color: #fff;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #007bff;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Features</h1>
+    <form action="/predict" method="post">
+        <label for="N">N:</label>
+        <input type="text" id="N" name="N" placeholder="Enter value for N"><br>
+        <label for="P">P:</label>
+        <input type="text" id="P" name="P" placeholder="Enter value for P"><br>
+        <label for="K">K:</label>
+        <input type="text" id="K" name="K" placeholder="Enter value for K"><br>
+        <label for="temperature">Temperature:</label>
+        <input type="text" id="temperature" name="temperature" placeholder="Enter value for temperature"><br>
+        <label for="humidity">Humidity:</label>
+        <input type="text" id="humidity" name="humidity" placeholder="Enter value for humidity"><br>
+        <label for="ph">pH:</label>
+        <input type="text" id="ph" name="ph" placeholder="Enter value for pH"><br>
+        <label for="rainfall">Rainfall:</label>
+        <input type="text" id="rainfall" name="rainfall" placeholder="Enter value for rainfall"><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

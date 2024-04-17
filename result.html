@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Set body height to viewport height */
+        }
+        .container {
+            max-width: 600px; /* Adjust the maximum width of the container */
+            padding: 20px;
+            text-align: center; /* Center align the content inside the container */
+            background-color: #fff; /* Add a background color to the container */
+            border-radius: 8px; /* Add some rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- Wrap content inside a container -->
+        <h1>Prediction Result</h1>
+        <p>The predicted label is: {{ prediction }}</p>
+    </div>
+</body>
+</html>
